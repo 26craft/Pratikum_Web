@@ -30,3 +30,13 @@
 .padding {
   padding: 40px;
 }
+
+.carousel-inner > .item > .img {
+  width: 100%;
+  height: 100px;
+}
+
+.carousel {
+  width: 100%;
+  height: 100%;
+}
