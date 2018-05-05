@@ -3,15 +3,6 @@
   padding-top: 0.1px;
 }
 
-#socialmedia {
-    position: relative;
-    display: block;
-    width: 90px;
-    margin: auto;
-    padding-left: 700px;
-
-}
-
 .font {
   font-family: cursive;
   margin-top: 0;
@@ -42,8 +33,4 @@
 
 .padding {
   padding: 40px;
-}
-
-a:active {
-  background-color: yellow;
 }

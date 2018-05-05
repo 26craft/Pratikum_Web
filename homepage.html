@@ -20,6 +20,8 @@
       <table style="float:right">
         <tbody>
           <tr>
+            <td id="date"></td>
+            <td>&nbsp;</td>
             <td><a href="#">
               <img src="icon/social/png/social-twitter.png" width="20" height="20" border="0">
               </a>
@@ -94,20 +96,17 @@
         <div class="col-sm-5">&copy;RocketIwak</div>
       </div>
 
-      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-      <!-- Include all compiled plugins (below), or include individual files as needed -->
-      <script src="js/bootstrap.min.js"></script>
-      <!--wow js-->
-      <script src="./js/wow.min.js"></script>
-      <script>
-        new WOW().init();
-      </script>
-      <script>
-      if (new Date().getHours() < 18) {
-          document.getElementById("condition").innerHTML = "Have a nice Day!!";
-      }
+      <!-- finally -->
+      <script type="text/javascript">
+        if (new Date().getHours() < 10) {
+            document.getElementById("date").innerHTML = "Good Morning"
+        }
+        else if (new Date().getHours() < 18) {
+            document.getElementById("date").innerHTML = "Good Day"
+        }
+        else {
+          document.getElementById("date").innerHTML = "Good Evening"
+        }
       </script>
   </body>
-  <!--edited by http://zouann.esy.es-->
 </html>
