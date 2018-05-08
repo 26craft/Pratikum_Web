@@ -8,13 +8,17 @@
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
   </head>
-  <body class="container" style="color: grey;">
+  <body class="container" style="color: grey;" id="change">
     <!-- header -->
     <div class="space">
       <h1></h1>
     </div>
     <!-- header finish -->
-
+    <div style="float:left">
+    <p>
+      <button type="button" onclick="bg(0)">White</button>
+      <button type="button" onclick="bg(1)">Gray</button>
+    </p>
     <!-- social media -->
     <div>
       <table style="float:right">
@@ -239,6 +243,20 @@
         }
         else {
           document.getElementById("date").innerHTML = "Good Evening"
+        }
+      </script>
+
+      <!-- change background -->
+      <script type="text/javascript">
+        function bg(val) {
+          if (val == 0) {
+            document.getElementById("change").style.backgroundColor = "white";
+            document.getElementById("change").style.color = "black";
+          }
+          else {
+            document.getElementById("change").style.backgroundColor = "LightGray";
+            document.getElementById("change").style.color = "red";
+          }
         }
       </script>
   </body>

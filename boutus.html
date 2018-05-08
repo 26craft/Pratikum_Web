@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width: device-width, initial-scale:1">
+    <title>About Us</title>
+    <link rel="stylesheet" href="/css/master.css">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+  </head>
+  <body class="container" id="change">
+      <div style="float:left">
+      <p>
+        <button type="button" onclick="bg(0)">White</button>
+        <button type="button" onclick="bg(1)">Gray</button>
+      </p>
+    </div>
+
+    <!-- change background -->
+    <script type="text/javascript">
+      function bg(val) {
+        if (val == 0) {
+          document.getElementById("change").style.backgroundColor = "white";
+          document.getElementById("change").style.color = "black";
+        }
+        else {
+          document.getElementById("change").style.backgroundColor = "LightGray";
+          document.getElementById("change").style.color = "red";
+        }
+      }
+    </script>
+  </body>
+</html>
