@@ -2,19 +2,83 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <meta name="viewport" content="width: device-width, initial-scale:1">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About Us</title>
-    <link rel="stylesheet" href="/css/master.css">
-    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/store.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <script src="js/bootstrap.min.js"></script>
   </head>
   <body class="container" id="change">
-      <div style="float:left">
-      <p>
-        <button type="button" onclick="bg(0)">White</button>
-        <button type="button" onclick="bg(1)">Gray</button>
-      </p>
+    <br>
+    <div class="col-sm-12" style="float:left">
+    <p>
+      <button type="button" onclick="bg(0)">White</button>
+      <button type="button" onclick="bg(1)">Gray</button>
+    </p>
+  </div>
+
+  <div>
+    <table style="float:right">
+      <tbody>
+        <tr>
+          <td id="date"></td>
+          <td>&nbsp;</td>
+          <td><a href="#">
+            <img src="icon/social/png/social-twitter.png" width="20" height="20" border="0">
+            </a>
+          </td>
+          <td>&nbsp;</td>
+          <td><a href="#">
+            <img src="icon/social/png/social-instagram.png" width="20" height="20" border="0">
+            </a>
+          </td>
+          <td>&nbsp;</td>
+          <td><a href="#">
+            <img src="icon/social/png/social-facebook.png" width="20" height="20" border="0">
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <!-- social media finish -->
+    <div class="col-sm-12">
+      <center>
+        <h1>About Us <hr></h1>
     </div>
+
+    <div class="col-sm-12">
+      <p>Cheevin Yoviananda</p>
+      <p>04316051</p>
+    </div>
+
+    <div class="row">
+      <div class="col-sm-12 padding"></div>
+    </div>
+    <!-- Footer -->
+    <div class="row center">
+      <div class="col-sm-2"></div>
+      <div class="col-sm-1"><a href="store.html">STORE</a></div>
+      <div class="col-sm-2"><a href="boutus.html">ABOUT US</a></div>
+      <div class="col-sm-1"><a href="https://www.google.co.id/maps/place/Jl.+Raya+Menganti+Jeruk+No.316,+Lidah+Kulon,+Lakarsantri,+Kota+SBY,+Jawa+Timur+60213/@-7.3053192,112.6488431,19z/data=!3m1!4b1!4m5!3m4!1s0x2dd7fda388e7110d:0x29edc9d1f73cfcf6!8m2!3d-7.3053192!4d112.6493903">SITEMAP</a></div>
+      <div class="col-sm-3"></div>
+      <div class="col-sm-3">&copy;RocketIwak</div>
+    </div>
+    <div class="row">
+      <div class="col-sm-12 padding"></div>
+    </div>
+    <!-- finally -->
+    <script type="text/javascript">
+      if (new Date().getHours() < 10) {
+          document.getElementById("date").innerHTML = "Good Morning"
+      }
+      else if (new Date().getHours() < 18) {
+          document.getElementById("date").innerHTML = "Good Day"
+      }
+      else {
+        document.getElementById("date").innerHTML = "Good Evening"
+      }
+    </script>
 
     <!-- change background -->
     <script type="text/javascript">
